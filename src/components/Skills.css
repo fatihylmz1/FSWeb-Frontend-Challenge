@@ -1,0 +1,26 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 7.5rem;
+    margin-top: 9rem;
+
+}
+
+.logo {
+    height: 7.5rem;
+    width: 7.5rem;
+    margin-top: 2rem;
+}
+
+
+.langs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-name {
+    margin-left: 2.5rem;
+}
