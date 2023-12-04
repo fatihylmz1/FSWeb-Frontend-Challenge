@@ -1,10 +1,10 @@
 import React from "react";
 import "./Profile.css";
 
-export const Profile = () => {
+export const Profile = ({ isDarkMode }) => {
     return (
         <div className="profile">
-            <h1>PROFILE</h1>
+            <h1 className="head">PROFILE</h1>
             <div className="profile-content">
                 <div>
                     <h2>Basic Information</h2>

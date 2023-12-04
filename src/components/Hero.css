@@ -9,12 +9,24 @@
     height: 41.9375rem;
 }
 
+.header-blue-dark {
+    background-color: #171043;
+    width: 70%;
+    height: 41.9375rem;
+}
+
 .header-blue.dark-mode {
     background-color: bisque;
 }
 
 .header-green {
     background-color: #CBF281;
+    width: 30%;
+    height: 41.9375rem;
+}
+
+.header-green-dark {
+    background-color: #1A210B;
     width: 30%;
     height: 41.9375rem;
 }
@@ -35,6 +47,16 @@
     border-radius: .2rem;
     padding: .5rem;
     color: #3730A3;
+    margin-right: 1rem;
+}
+
+.navlink-dark {
+    text-decoration: none;
+    border: 5rem;
+    background-color: #252128;
+    border-radius: .2rem;
+    padding: .5rem;
+    color: white;
     margin-right: 1rem;
 }
 

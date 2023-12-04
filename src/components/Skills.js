@@ -2,10 +2,10 @@ import React from "react";
 import "./Skills.css";
 
 
-export const Skills = () => {
+export const Skills = ({ isDarkMode }) => {
     return (
-        <div className="skills">
-            <div className="header"><h1>Skills</h1></div>
+        <div className={!isDarkMode ? "skills" : "skills-dark"}>
+            <div className={!isDarkMode ? "header" : "header-dark"}><h1>Skills</h1></div>
 
 
 
