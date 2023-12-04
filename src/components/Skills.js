@@ -1,7 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import logoreact from "./logo/Rectangle 35.png"
-import logoredux from "./logo/Rectangle 34.png"
 
 
 export const Skills = () => {

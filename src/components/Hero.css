@@ -9,6 +9,10 @@
     height: 41.9375rem;
 }
 
+.header-blue.dark-mode {
+    background-color: bisque;
+}
+
 .header-green {
     background-color: #CBF281;
     width: 30%;

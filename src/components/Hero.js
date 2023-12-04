@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+
+
 export const Hero = () => {
+
+
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem("darkMode");
+        setIsDarkMode(savedDarkMode === "true");
+    }, []);
+
+    const toggleMode = () => {
+        setIsDarkMode(!isDarkMode);
+        localStorage.setItem("darkMode", !isDarkMode);
+    };
+
+
     return (
         <div>
             <div className="header-body">
@@ -35,7 +52,9 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className="header-green">
-                    <div>Dark Mode</div>
+                    <div>
+                        <button onClick={toggleMode}>Toggle Dark/Light Mode</button>
+                    </div>
                 </div>
             </div>
         </div>
