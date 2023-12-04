@@ -1,0 +1,53 @@
+.projects {
+    height: 62.4375rem;
+    width: 100%;
+    background-color: #CBF281;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+
+.shopping {
+    width: 22.5rem;
+    height: 22.5rem;
+    border-radius: 0.75rem 0rem 0rem 0.75rem;
+    border-right: 1px solid #D2D2D2;
+}
+
+.object-name {
+    background-color: #4731D3;
+    border-radius: 1.4375rem;
+    text-align: center;
+    width: max-content;
+    padding: 0.5rem 1.125rem 0.5625rem 1.125rem;
+    color: white;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 60%;
+    height: auto;
+    border-radius: 0.75rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    margin-right: 1rem;
+}
+
+.projects h1 {
+    text-align: start;
+    margin-right: 68rem;
+}
