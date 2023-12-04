@@ -1,0 +1,18 @@
+.profile {
+    background-color: #4731D3;
+    height: 34.5rem;
+    flex-wrap: wrap;
+
+}
+
+.profile-img {
+    height: 23.49281rem;
+    width: auto;
+    border-radius: 1.125rem;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: row;
+
+}

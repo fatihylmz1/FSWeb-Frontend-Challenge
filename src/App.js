@@ -1,5 +1,6 @@
 import './App.css';
 import { Hero } from './components/Hero';
+import { Profile } from './components/Profile';
 import { Skills } from './components/Skills';
 
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Hero />
       <Skills />
+      <Profile />
     </div>
   );
 }
