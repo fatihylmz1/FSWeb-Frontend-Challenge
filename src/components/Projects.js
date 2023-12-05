@@ -1,24 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Projects.css";
 import shopping from "./ProjectPhoto/shoppingcard.png";
 import crud from "./ProjectPhoto/crudfilmler.png";
 import { NavLink } from "react-router-dom";
+import { DataContext } from "../context/DataProvider";
 
-export const Projects = () => {
+export const Projects = ({ isDarkMode }) => {
+
+    const { data } = useContext(DataContext);
     return (
-        <div className="projects">
-            <div><h1>Projects</h1></div>
+        <div className={!isDarkMode ? "projects" : "projects-dark"}>
+            <div><h1 className={!isDarkMode ? "project-head" : "project-head-dark"}>{data.project}</h1></div>
 
-            <div className="card">
+            <div className={!isDarkMode ? "card" : "card-dark"}>
                 <div>
                     <img src={shopping} className="shopping" />
                 </div>
 
-                <div>
-                    <h2>Shopping Card</h2>
-                    <p>Bu sprint challenge'ında, bilgisayar başında karnı acıkan yazılımcılara yiyecek getirmek için tasarlanmış bir web sitesi Teknolojik Yemekler' markasına, Anasayfa, Sipariş Formu ve Sipariş Alındı sayfası oluşturarak bu konulardaki ustalığınızı göstereceksin.</p>
+                <div className="content">
+                    <h2 className="project-name">{data.projectname1}</h2>
+                    <p className={!isDarkMode ? "project-content" : "project-content-dark"}>{data.projectcontent1}</p>
 
-                    <div className="lang">
+                    <div className="lang-project">
                         <p className="object-name">Vercel</p>
                         <p className="object-name">Redux</p>
                         <p className="object-name">React</p>
@@ -31,16 +34,16 @@ export const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className="card">
+            <div className={!isDarkMode ? "card" : "card-dark"}>
                 <div>
                     <img src={crud} className="shopping" />
                 </div>
 
-                <div>
-                    <h2>Crud Filmler</h2>
-                    <p>Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalışacak, iki farklı reducer ile işlem yapacaksınız. Hem mevcut tüm state ve action oluşturucuları kullanacak, hem de sıfırdan reducer/redux pairing'leri oluşturacaksınız.</p>
+                <div className="content">
+                    <h2 className="project-name">{data.projectname2}</h2>
+                    <p className={!isDarkMode ? "project-content" : "project-content-dark"}>{data.projectcontent2}</p>
 
-                    <div className="lang">
+                    <div className="lang-project">
                         <p className="object-name">Vercel</p>
                         <p className="object-name">Redux</p>
                         <p className="object-name">React</p>

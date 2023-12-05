@@ -1,17 +1,31 @@
 .skills {
+    background-color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-
+    justify-content: center;
 }
 
 .skills-dark {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 
     background-color: #252128;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 67%;
+
+}
+
+.skills-content-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 67%;
 
 }
 
@@ -27,10 +41,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 19rem;
 }
 
 .program-name {
     margin-left: 2.5rem;
+    color: black;
+}
+
+.program-name-dark {
+    margin-left: 2.5rem;
+    color: white;
 }
 
 .header {
@@ -39,4 +60,61 @@
 
 .header-dark {
     color: #CBF281;
+}
+
+@media(max-width: 428px) {
+    .skills {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-dark {
+
+        background-color: #252128;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        text-align: center;
+        width: 67%;
+
+    }
+
+    .skills-content-dark {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        text-align: center;
+        width: 67%;
+
+    }
+
+}
+
+@media(min-width:425px) and (max-width: 1024px) {
+    .skills-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 80%;
+        margin-right: 5rem;
+
+    }
+
+    .skills-content-dark {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 80%;
+        margin-right: 5rem;
+
+    }
+
 }

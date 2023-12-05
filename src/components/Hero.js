@@ -8,7 +8,7 @@ import { DataContext } from "../context/DataProvider";
 
 
 
-export const Hero = ({ toggleMode, isDarkMode, }) => {
+export const Hero = ({ toggleMode, isDarkMode }) => {
 
 
     const { data } = useContext(DataContext);
@@ -17,14 +17,14 @@ export const Hero = ({ toggleMode, isDarkMode, }) => {
 
 
     return (
-        <div>
+        <div className="hero">
             <div className="header-body">
                 <div className={!isDarkMode ? "header-blue" : "header-blue-dark"}>
                     <div className="lang">
-                        <button onClick={togglelang}>
-                            Türkçeye Geç
+                        <p className="extra-lang"><button onClick={togglelang} className="btn-lang">Türkçe</button>'ye Geç</p>
 
-                        </button></div>
+                        <p className="extra-toggle"><button onClick={toggleMode} className="btn-toggle" />Dark/Light</p>
+                    </div>
                     <h3 className="name">Mehmet Fatih Yılmaz</h3>
 
                     <div className="header-content">
@@ -44,15 +44,9 @@ export const Hero = ({ toggleMode, isDarkMode, }) => {
                             </div>
                         </div>
 
-                        <div >
+                        <div>
                             <img src="https://avatars.githubusercontent.com/u/145333340?v=4" className="header-img" />
-
                         </div>
-                    </div>
-                </div>
-                <div className={!isDarkMode ? "header-green" : "header-green-dark"}>
-                    <div>
-                        <button onClick={toggleMode}>Toggle Dark/Light Mode</button>
                     </div>
                 </div>
             </div>

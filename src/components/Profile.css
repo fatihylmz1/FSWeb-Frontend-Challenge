@@ -2,7 +2,17 @@
     background-color: #4731D3;
     height: 34.5rem;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.profile-dark {
+    background-color: #171043;
+    height: 34.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-img {
@@ -14,9 +24,89 @@
 .profile-content {
     display: flex;
     flex-direction: row;
+    margin-left: 20rem;
 
+}
+
+.profile-content div {
+    margin-right: 5rem;
 }
 
 .head {
     color: #CBF281;
+    margin-left: 20rem;
+}
+
+.green {
+    color: #CBF281;
+}
+
+.white {
+    color: white;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-content p {
+    margin-right: 1rem;
+}
+
+@media(max-width: 428px) {
+    .head {
+        color: #CBF281;
+        margin-left: 3rem;
+    }
+
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+
+    }
+
+    .profile {
+        background-color: #4731D3;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .profile-dark {
+        background-color: #171043;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-img {
+        height: 18rem;
+        width: auto;
+        border-radius: 1.125rem;
+    }
+
+}
+
+@media (min-width:425px) and (max-width: 1024px) {
+    .head {
+        color: #CBF281;
+        margin-left: 4.5rem;
+    }
+
+    .profile-content {
+        display: flex;
+        flex-direction: row;
+        margin-left: 4.5rem;
+
+    }
+
+    .profile-content div {
+        margin-right: 4rem;
+    }
+
 }

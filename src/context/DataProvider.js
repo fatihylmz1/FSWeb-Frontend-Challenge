@@ -7,7 +7,7 @@ export const DataContext = createContext();
 export const DataContextProvider = ({ children }) => {
     const data_tr =
     {
-        frontend: "Ben bir Frontend<br /> Geliştiriciyim...",
+        frontend: "Ben bir Frontend Geliştiriciyim...",
         who: "...harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven..",
         basicinfo: "Temel Bilgiler",
         dogum: "Doğum Tarihi",
@@ -15,7 +15,7 @@ export const DataContextProvider = ({ children }) => {
         egitim: "Eğitim Durumu",
         rol: "Tercih Ettiği Rol",
         hakkimda: "Hakkımda",
-        hakkimdacontent: "23 yaşında bir Elektrik Elektronik mühendisiyim.",
+        hakkimdacontent: "23 yaşında bir Elektrik Elektronik mühendisiyim.Şu anda Full-Stack Geliştirici olmak için çalışıyorum.",
         project: "Projeler",
         projectname1: "Alışveriş Kartı",
         projectcontent1: "Bu sprint challenge'ında, bilgisayar başında karnı acıkan yazılımcılara yiyecek getirmek için tasarlanmış bir web sitesini tasarladım ve Teknolojik Yemekler' markasına, Anasayfa, Sipariş Formu ve Sipariş Alındı sayfası oluşturarak bu konulardaki ustalığımı gösterdim.",
@@ -23,36 +23,39 @@ export const DataContextProvider = ({ children }) => {
         projectcontent2: "Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalıştım, iki farklı reducer ile işlem yaptım. Hem mevcut tüm state ve action oluşturucuları kullandım, hem de sıfırdan reducer/redux pairing'leri oluşturdum.",
         message: "Bana Mesaj Gönder!",
         messagecontent: "Bir teklifin ya da sorun mu var, veya sadecebir merhaba mı demek istedin ? Hadi! ",
+        skills: "Özellikler",
+        profile: "Profil"
 
 
     };
     const data_en =
     {
-        frontend: "I am a Frontend<br /> Developer...",
-        who: "...who likes to craft solid and scalable frontend<br /> products with great user experiences.",
+        frontend: "I am a Frontend Developer...",
+        who: "...who likes to craft solid and scalable frontend products with great user experiences.",
         basicinfo: "Basic Information",
         dogum: "Birth Date",
         city: "City",
         egitim: "Education",
         rol: "Preferred Role",
         hakkimda: "About Me",
-        hakkimdacontent: "I am an Electric-Electronical Engineer who ages 23.",
+        hakkimdacontent: "I am an Electric-Electronical Engineer who ages 23.Now, I am working to become a Full-Stack developer.",
         project: "Projects",
         projectname1: "Shopping Card",
         projectcontent1: "In this sprint challenge, I designed a web system designed to bring food to software developers who are hungry in front of the computer, and I showed my mastery by running the Home Page, Order Form and Order Receipt page for the Technological Food brand.",
         projectname2: "Crud Films",
         projectcontent2: "In this project, I worked on a web application containing a small movie database and processed it with two different reducers. I used all available state and action creators and created reducer/redux pairings from scratch.",
         message: "Send Me a Message!",
-        messagecontent: "Got a question or proposal, or just want<br /> to say hello? Go ahead.",
+        messagecontent: "Got a question or proposal, or just want to say hello? Go ahead.",
+        skills: "Skills",
+        profile: "Profile",
 
 
     };
 
 
-
-
     const [lang, setLang] = useState(true);
     const [data, setData] = useState(data_tr);
+
 
     useEffect(() => {
         localStorage.setItem("lang", lang);
