@@ -5,7 +5,7 @@ import { Hero } from './components/Hero';
 import { Profile } from './components/Profile';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
-import { Datatr } from './data-tr';
+
 
 
 function App() {
@@ -20,24 +20,6 @@ function App() {
     setIsDarkMode(!isDarkMode);
     localStorage.setItem("darkMode", !isDarkMode);
   };
-  // const [lang, setLang] = useState("tr");
-
-  // useEffect(() => {
-  //   const savedlang = localStorage.getItem("lang");
-  //   setLang(savedlang === "en");
-  // }, []);
-
-  // const togglelang = () => {
-  //   setLang(!lang);
-  //   localStorage.setItem("lang", !lang);
-  // };
-
-  // useEffect(() => {
-  //   const savedlang = localStorage.getItem("lang");
-  //   // console.log(savedlang);
-  // }, [lang]);
-
-
 
   return (
     <div>
