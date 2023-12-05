@@ -1,32 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Hero.css";
 import { NavLink } from "react-router-dom";
 import github from "./Icons/github.svg";
 import linkedin from "./Icons/linkedin.svg";
+import { DataContext } from "../context/DataProvider";
 
 
 
 
-export const Hero = ({ toggleMode, isDarkMode }) => {
+export const Hero = ({ toggleMode, isDarkMode, }) => {
 
 
-    // const [isDarkMode, setIsDarkMode] = useState(false);
-    // useEffect(() => {
-    //     const savedDarkMode = localStorage.getItem("darkMode");
-    //     setIsDarkMode(savedDarkMode === "true");
-    // }, []);
-
-    // const toggleMode = () => {
-    //     setIsDarkMode(!isDarkMode);
-    //     localStorage.setItem("darkMode", !isDarkMode);
-    // };
-
-    useEffect(() => {
-        const dark = localStorage.getItem("darkMode");
-        console.log(dark);
-    }, [isDarkMode]);
-
-
+    const { data } = useContext(DataContext);
+    const { togglelang } = useContext(DataContext);
 
 
 
@@ -34,13 +20,17 @@ export const Hero = ({ toggleMode, isDarkMode }) => {
         <div>
             <div className="header-body">
                 <div className={!isDarkMode ? "header-blue" : "header-blue-dark"}>
-                    <div className="lang">Türkçeye Geç</div>
+                    <div className="lang">
+                        <button onClick={togglelang}>
+                            Türkçeye Geç
+
+                        </button></div>
                     <h3 className="name">Mehmet Fatih Yılmaz</h3>
 
                     <div className="header-content">
                         <div className="header-cv">
-                            <p className="frontend">I am a Frontend<br /> Developer...</p>
-                            <p className="who">...who likes to craft solid and scalable frontend<br /> products with great user experiences.</p>
+                            <p className="frontend">{data.frontend}</p>
+                            <p className="who">{data.who}</p>
 
                             <div className="link">
                                 <div className={!isDarkMode ? "navlink" : "navlink-dark"}>
