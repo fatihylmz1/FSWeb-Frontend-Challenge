@@ -18,7 +18,7 @@
     text-align: center;
     width: 75%;
     flex-wrap: wrap;
-    margin: 2rem 0 3rem 10rem;
+
 }
 
 .skills-logo {
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     text-align: center;
     width: 75%;
-    margin: 2rem 0 3rem 10rem;
+
 }
 
 .logo {
@@ -73,7 +73,7 @@
 
 }
 
-@media(max-width: 428px) {
+@media(min-width: 350px) and (max-width: 428px) {
     .skills {
         background-color: white;
         display: flex;
@@ -105,9 +105,30 @@
 
     }
 
+    .skills-logo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 35rem;
+        padding-left: 0;
+    }
+
+    .header {
+        color: #4832D3;
+        text-align: left;
+        margin-left: 3rem;
+
+    }
+
+    .header-dark {
+        color: #CBF281;
+        text-align: left;
+        margin-left: 3rem;
+
+    }
+
 }
 
-@media(min-width:425px) and (max-width: 1024px) {
+@media(min-width:428px) and (max-width: 1024px) {
     .skills-content {
         display: flex;
         flex-direction: row;
@@ -126,6 +147,26 @@
         width: 80%;
         margin-right: 5rem;
 
+    }
+
+    .header {
+        color: #4832D3;
+        text-align: left;
+        margin-left: 4rem;
+
+    }
+
+    .header-dark {
+        color: #CBF281;
+        text-align: left;
+        margin-left: 4rem;
+
+    }
+
+    .skills-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
     }
 
 }

@@ -127,7 +127,7 @@
 }
 
 
-@media(max-width: 428px) {
+@media(min-width: 350px) and (max-width: 428px) {
     .header-blue {
         background: rgb(71, 49, 211);
         display: flex;
@@ -164,14 +164,17 @@
 
     .name {
         color: #CBF281;
-        font-size: 1rem;
-        margin-left: 2.5rem;
+        font-size: 1.5rem;
+        margin-left: 0;
+        padding: 0;
+        margin-right: 3rem;
 
     }
 
     .header-content {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap-reverse;
         margin-left: 2.5rem;
     }
 
@@ -210,26 +213,32 @@
 
     }
 
+    .img-container {
+        height: 50%;
+        width: 40%;
+        margin-right: 12rem;
+    }
+
 }
 
-@media(min-width:425px) and (max-width: 1024px) {
+@media(min-width:428px) and (max-width: 1024px) {
     .lang {
         display: flex;
         flex-direction: row;
         max-width: 20rem;
-        margin-left: 31rem;
+        margin-left: 24rem;
     }
 
     .name {
         color: #CBF281;
         font-size: 2rem;
-        margin-left: 3.5rem;
+        margin-left: 8rem;
     }
 
     .header-content {
         display: flex;
         flex-direction: row;
-        margin-left: 3.5rem;
+        margin-left: 0;
     }
 
     .header-img {

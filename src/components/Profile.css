@@ -4,8 +4,6 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .profile-dark {
@@ -75,7 +73,7 @@
     height: auto;
 }
 
-@media(max-width: 428px) {
+@media(min-width: 350px) and (max-width: 428px) {
     .head {
         color: #CBF281;
         margin-left: 3rem;
@@ -113,21 +111,29 @@
 
 }
 
-@media (min-width:425px) and (max-width: 1024px) {
+@media (min-width:428px) and (max-width: 1024px) {
     .head {
         color: #CBF281;
-        margin-left: 4.5rem;
+        margin-left: 8rem;
     }
 
     .profile-content {
         display: flex;
         flex-direction: row;
-        margin-left: 4.5rem;
+        margin-left: 8rem;
 
     }
 
     .profile-content div {
         margin-right: 4rem;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 0;
+        height: auto;
     }
 
 }
