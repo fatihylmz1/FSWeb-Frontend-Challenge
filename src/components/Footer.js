@@ -15,9 +15,9 @@ export const Footer = () => {
     return (
         <div >
 
-            <div className={!isDarkMode ? "footer" : "footer-dark"}>
+            <div className={isDarkMode === "light" ? "footer" : "footer-dark"}>
                 <div><h1 className="footer-head">{data.message}</h1></div>
-                <div><p className={!isDarkMode ? "message" : "message-dark"}>{data.messagecontent}</p></div>
+                <div><p className={isDarkMode === "light" ? "message" : "message-dark"}>{data.messagecontent}</p></div>
                 <div><NavLink to="#" className="nav-link">fatihylmz27@icloud.com</NavLink></div>
                 <div className="icons">
                     <img src={twitter} />

@@ -8,7 +8,7 @@ export const Profile = () => {
 
     const { isDarkMode } = useContext(DataContext);
     return (
-        <div className={!isDarkMode ? "profile" : "profile-dark"}>
+        <div className={isDarkMode === "light" ? "profile" : "profile-dark"}>
             <h1 className="head">{data.profile}</h1>
             <div className="profile-content">
                 <div className="basic-info">

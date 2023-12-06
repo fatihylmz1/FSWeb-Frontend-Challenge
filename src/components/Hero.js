@@ -23,7 +23,7 @@ export const Hero = () => {
     return (
         <div>
 
-            <div className={!isDarkMode ? "header-blue" : "header-blue-dark"}>
+            <div className={isDarkMode === "light" ? "header-blue" : "header-blue-dark"}>
                 <div className="lang">
                     <p className="extra-lang"><button onClick={Togglelang} className="btn-lang">{lang === "tr-TR" ? "İngilizce" : "Türkçe"}</button>'ye Geç</p>
 
@@ -37,11 +37,11 @@ export const Hero = () => {
                         <p className="who">{data.who}</p>
 
                         <div className="link">
-                            <div className={!isDarkMode ? "navlink" : "navlink-dark"}>
+                            <div className={isDarkMode === "light" ? "navlink" : "navlink-dark"}>
                                 <img src={github} />
                                 <NavLink to="https://github.com/fatihylmz1" >GitHub</NavLink>
                             </div>
-                            <div className={!isDarkMode ? "navlink" : "navlink-dark"}>
+                            <div className={isDarkMode === "light" ? "navlink" : "navlink-dark"}>
                                 <img src={linkedin} />
                                 <NavLink to="https://www.linkedin.com/in/mehmet-fatih-y%C4%B1lmaz-a555111a5/" >Linkedin</NavLink>
                             </div>

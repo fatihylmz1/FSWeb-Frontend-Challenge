@@ -93,6 +93,9 @@ export const DataContextProvider = ({ children }) => {
         const firstLang = localStorage.getItem("lang");
         const initial = firstLang ? firstLang : lang;
         localStorage.setItem('lang', initial);
+        const firstTheme = localStorage.getItem("theme");
+        const initialTheme = firstTheme ? firstTheme : isDarkMode;
+        localStorage.setItem("theme", initialTheme);
 
     }, []);
 
@@ -121,17 +124,21 @@ export const DataContextProvider = ({ children }) => {
     }, [lang]);
 
 
+    const toggleMode = () => {
+        const currentTheme = localStorage.getItem("theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", newTheme);
+        setIsDarkMode(newTheme);
+    };
 
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
-        setIsDarkMode(savedTheme === "true");
-    }, []);
+        console.log("saved", savedTheme);
+        setIsDarkMode(savedTheme ? savedTheme : tema);
+
+    }, [isDarkMode]);
 
 
-    const toggleMode = () => {
-        setIsDarkMode(!isDarkMode);
-        localStorage.setItem("theme", !isDarkMode);
-    };
 
     const contexobject = {
         data,

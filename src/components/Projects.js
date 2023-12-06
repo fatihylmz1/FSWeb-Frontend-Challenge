@@ -11,17 +11,17 @@ export const Projects = () => {
 
     const { isDarkMode } = useContext(DataContext);
     return (
-        <div className={!isDarkMode ? "projects" : "projects-dark"}>
-            <div><h1 className={!isDarkMode ? "project-head" : "project-head-dark"}>{data.project}</h1></div>
+        <div className={isDarkMode === "light" ? "projects" : "projects-dark"}>
+            <div><h1 className={isDarkMode === "light" ? "project-head" : "project-head-dark"}>{data.project}</h1></div>
 
-            <div className={!isDarkMode ? "card" : "card-dark"}>
+            <div className={isDarkMode === "light" ? "card" : "card-dark"}>
                 <div>
                     <img src={shopping} className="shopping" />
                 </div>
 
                 <div className="content">
                     <h2 className="project-name">{data.projectname1}</h2>
-                    <p className={!isDarkMode ? "project-content" : "project-content-dark"}>{data.projectcontent1}</p>
+                    <p className={isDarkMode === "light" ? "project-content" : "project-content-dark"}>{data.projectcontent1}</p>
 
                     <div className="lang-project">
                         <p className="object-name">Vercel</p>
@@ -36,14 +36,14 @@ export const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className={!isDarkMode ? "card" : "card-dark"}>
+            <div className={isDarkMode === "light" ? "card" : "card-dark"}>
                 <div>
                     <img src={crud} className="shopping" />
                 </div>
 
                 <div className="content">
                     <h2 className="project-name">{data.projectname2}</h2>
-                    <p className={!isDarkMode ? "project-content" : "project-content-dark"}>{data.projectcontent2}</p>
+                    <p className={isDarkMode === "light" ? "project-content" : "project-content-dark"}>{data.projectcontent2}</p>
 
                     <div className="lang-project">
                         <p className="object-name">Vercel</p>

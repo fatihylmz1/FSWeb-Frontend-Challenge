@@ -9,10 +9,10 @@ export const Skills = () => {
 
     const { isDarkMode } = useContext(DataContext);
     return (
-        <div className={!isDarkMode ? "skills" : "skills-dark"}>
+        <div className={isDarkMode === "light" ? "skills" : "skills-dark"}>
 
-            <div className={!isDarkMode ? "skills-content" : "skills-content-dark"}>
-                <div className={!isDarkMode ? "header" : "header-dark"}><h1>{data.skills}</h1></div>
+            <div className={isDarkMode === "light" ? "skills-content" : "skills-content-dark"}>
+                <div className={isDarkMode === "light" ? "header" : "header-dark"}><h1>{data.skills}</h1></div>
 
 
 
@@ -20,29 +20,29 @@ export const Skills = () => {
                     <div className="langs">
 
                         <img src={data.javaurl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langjava}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langjava}</p>
 
                     </div>
                     <div className="langs">
                         <img src={data.reacturl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langreact}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langreact}</p>
                     </div>
                     <div className="langs">
                         <img src={data.reduxurl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langredux}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langredux}</p>
                     </div>
 
                     <div className="langs">
                         <img src={data.nodeurl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langnode}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langnode}</p>
                     </div>
                     <div className="langs">
                         <img src={data.vscdurl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langvscd}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langvscd}</p>
                     </div>
                     <div className="langs">
                         <img src={data.figmaurl} className="logo" />
-                        <p className={!isDarkMode ? "program-name" : "program-name-dark"}>{data.langfigma}</p>
+                        <p className={isDarkMode === "light" ? "program-name" : "program-name-dark"}>{data.langfigma}</p>
                     </div>
                 </div>
             </div>
