@@ -5,9 +5,11 @@ import crud from "./ProjectPhoto/crudfilmler.png";
 import { NavLink } from "react-router-dom";
 import { DataContext } from "../context/DataProvider";
 
-export const Projects = ({ isDarkMode }) => {
+export const Projects = () => {
 
     const { data } = useContext(DataContext);
+
+    const { isDarkMode } = useContext(DataContext);
     return (
         <div className={!isDarkMode ? "projects" : "projects-dark"}>
             <div><h1 className={!isDarkMode ? "project-head" : "project-head-dark"}>{data.project}</h1></div>

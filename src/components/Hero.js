@@ -8,11 +8,14 @@ import { DataContext } from "../context/DataProvider";
 
 
 
-export const Hero = ({ toggleMode, isDarkMode }) => {
+export const Hero = () => {
 
 
     const { data } = useContext(DataContext);
     const { togglelang } = useContext(DataContext);
+    const { toggleMode } = useContext(DataContext);
+    const { isDarkMode } = useContext(DataContext);
+
 
 
 

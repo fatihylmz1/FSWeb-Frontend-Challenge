@@ -57,6 +57,19 @@ export const DataContextProvider = ({ children }) => {
     const [data, setData] = useState(data_tr);
 
 
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem("darkMode");
+        setIsDarkMode(savedDarkMode === "true");
+    }, []);
+
+    const toggleMode = () => {
+        setIsDarkMode(!isDarkMode);
+        localStorage.setItem("darkMode", !isDarkMode);
+    };
+
+
     useEffect(() => {
         localStorage.setItem("lang", lang);
     }, []);
@@ -65,7 +78,6 @@ export const DataContextProvider = ({ children }) => {
 
     const togglelang = () => {
         setLang(!lang);
-
     };
 
     useEffect(() => {
@@ -83,6 +95,8 @@ export const DataContextProvider = ({ children }) => {
         data,
         setData,
         togglelang,
+        toggleMode,
+        isDarkMode
     }
 
 

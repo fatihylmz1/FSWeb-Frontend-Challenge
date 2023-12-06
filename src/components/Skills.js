@@ -3,9 +3,11 @@ import "./Skills.css";
 import { DataContext } from "../context/DataProvider";
 
 
-export const Skills = ({ isDarkMode }) => {
+export const Skills = () => {
 
     const { data } = useContext(DataContext);
+
+    const { isDarkMode } = useContext(DataContext);
     return (
         <div className={!isDarkMode ? "skills" : "skills-dark"}>
 

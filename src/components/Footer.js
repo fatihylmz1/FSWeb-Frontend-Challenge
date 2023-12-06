@@ -7,9 +7,11 @@ import atsign from "./Icons/at-sign.svg";
 import instagram from "./Icons/Instagram.svg";
 import { DataContext } from "../context/DataProvider";
 
-export const Footer = ({ isDarkMode }) => {
+export const Footer = () => {
 
     const { data } = useContext(DataContext);
+
+    const { isDarkMode } = useContext(DataContext);
     return (
         <div >
 
