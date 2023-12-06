@@ -24,7 +24,20 @@ export const DataContextProvider = ({ children }) => {
         message: "Bana Mesaj Gönder!",
         messagecontent: "Bir teklifin ya da sorun mu var, veya sadecebir merhaba mı demek istedin ? Hadi! ",
         skills: "Özellikler",
-        profile: "Profil"
+        profile: "Profil",
+        langjava: "JavaSc",
+        javaurl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+        langreact: "REACT",
+        reacturl: "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png",
+        langredux: "REDUX",
+        reduxurl: "https://cdn-images-1.medium.com/max/1600/1*Vo5RDpNkOsfDn8sx06mthA.png",
+        langnode: "NODE",
+        nodeurl: "https://www.loginradius.com/blog/static/6ee159acf6c294342ec04f86aede5d14/701ee/coverImage.jpg",
+        langvscd: "VSCd.",
+        vscdurl: "https://pbs.twimg.com/profile_images/1545098208556097536/rKXaODLl_400x400.jpg",
+        langfigma: "FIGMA",
+        figmaurl: "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png",
+
 
 
     };
@@ -48,6 +61,18 @@ export const DataContextProvider = ({ children }) => {
         messagecontent: "Got a question or proposal, or just want to say hello? Go ahead.",
         skills: "Skills",
         profile: "Profile",
+        langjava: "JavaSc",
+        javaurl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+        langreact: "REACT",
+        reacturl: "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png",
+        langredux: "REDUX",
+        reduxurl: "https://cdn-images-1.medium.com/max/1600/1*Vo5RDpNkOsfDn8sx06mthA.png",
+        langnode: "NODE",
+        nodeurl: "https://www.loginradius.com/blog/static/6ee159acf6c294342ec04f86aede5d14/701ee/coverImage.jpg",
+        langvscd: "VSCd.",
+        vscdurl: "https://pbs.twimg.com/profile_images/1545098208556097536/rKXaODLl_400x400.jpg",
+        langfigma: "FIGMA",
+        figmaurl: "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png",
 
 
     };
