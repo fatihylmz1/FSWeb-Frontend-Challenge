@@ -16,7 +16,7 @@ export const Skills = () => {
 
 
 
-                <div className="column-1">
+                <div className="skills-logo">
                     <div className="langs">
 
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" className="logo" />
@@ -31,11 +31,7 @@ export const Skills = () => {
                         <img src="https://cdn-images-1.medium.com/max/1600/1*Vo5RDpNkOsfDn8sx06mthA.png" className="logo" />
                         <p className={!isDarkMode ? "program-name" : "program-name-dark"}>REDUX</p>
                     </div>
-                </div>
 
-
-
-                <div className="column-2">
                     <div className="langs">
                         <img src="https://www.loginradius.com/blog/static/6ee159acf6c294342ec04f86aede5d14/701ee/coverImage.jpg" className="logo" />
                         <p className={!isDarkMode ? "program-name" : "program-name-dark"}>NODE</p>

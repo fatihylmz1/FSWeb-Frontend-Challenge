@@ -11,7 +11,7 @@ export const Profile = () => {
         <div className={!isDarkMode ? "profile" : "profile-dark"}>
             <h1 className="head">{data.profile}</h1>
             <div className="profile-content">
-                <div>
+                <div className="basic-info">
                     <h2 className="white">{data.basicinfo}</h2>
                     <div className="info-content">
 
@@ -34,7 +34,7 @@ export const Profile = () => {
                     <img src="https://avatars.githubusercontent.com/u/145333340?v=4" className="profile-img" />
                 </div>
 
-                <div>
+                <div className="about-me">
                     <h2 className="white">{data.hakkimda}</h2>
                     <p className="white">{data.hakkimdacontent}</p>
                 </div>

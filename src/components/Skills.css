@@ -14,19 +14,28 @@
 .skills-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    width: 67%;
+    width: 75%;
+    flex-wrap: wrap;
+    margin: 2rem 0 3rem 10rem;
+}
 
+.skills-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+    padding-left: 10rem;
 }
 
 .skills-content-dark {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    width: 67%;
-
+    width: 75%;
+    margin: 2rem 0 3rem 10rem;
 }
 
 .logo {
@@ -56,10 +65,12 @@
 
 .header {
     color: #4832D3;
+
 }
 
 .header-dark {
     color: #CBF281;
+
 }
 
 @media(max-width: 428px) {

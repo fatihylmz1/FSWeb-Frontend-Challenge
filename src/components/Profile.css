@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
 
+
 }
 
 .profile-dark {
@@ -13,18 +14,22 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+
 }
 
 .profile-img {
-    height: 23.49281rem;
-    width: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
     border-radius: 1.125rem;
+    max-width: 22rem;
 }
 
 .profile-content {
     display: flex;
     flex-direction: row;
-    margin-left: 20rem;
+    margin-left: 24rem;
+    width: 75%;
 
 }
 
@@ -34,7 +39,7 @@
 
 .head {
     color: #CBF281;
-    margin-left: 20rem;
+    margin-left: 24rem;
 }
 
 .green {
@@ -52,6 +57,22 @@
 
 .info-content p {
     margin-right: 1rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 18rem;
+    height: auto;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 18rem;
+    height: auto;
 }
 
 @media(max-width: 428px) {

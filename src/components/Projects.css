@@ -45,21 +45,23 @@
 }
 
 .card {
-    width: 68%;
+    width: 65%;
     height: auto;
     border-radius: 0.75rem;
     background-color: white;
     display: flex;
     flex-direction: row;
+    margin-left: 8rem;
 }
 
 .card-dark {
-    width: 68%;
+    width: 65%;
     height: auto;
     border-radius: 0.75rem;
     background-color: #2B2727;
     display: flex;
     flex-direction: row;
+    margin-left: 8rem;
 }
 
 .links {
@@ -69,13 +71,13 @@
 .project-head {
     color: #4731D3;
     text-align: start;
-    margin-right: 72.5rem;
+    margin-right: 52rem;
 }
 
 .project-head-dark {
     color: #CBF281;
     text-align: start;
-    margin-right: 72.5rem;
+    margin-right: 52rem;
 }
 
 .project-name {
