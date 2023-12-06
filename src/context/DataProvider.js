@@ -78,11 +78,14 @@ export const DataContextProvider = ({ children }) => {
     };
 
     const initialLang = navigator.language;
+    const temaSorgu = window.matchMedia("(prefers-color-scheme: dark)");
+    const tema = temaSorgu.matches ? "dark" : "light";
+    console.log(tema);
 
 
     const [lang, setLang] = useState(localStorage.getItem("lang") || initialLang);
     const [data, setData] = useState(data_tr);
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("theme") || tema);
 
 
 
@@ -120,14 +123,14 @@ export const DataContextProvider = ({ children }) => {
 
 
     useEffect(() => {
-        const savedDarkMode = localStorage.getItem("darkMode");
-        setIsDarkMode(savedDarkMode === "true");
+        const savedTheme = localStorage.getItem("theme");
+        setIsDarkMode(savedTheme === "true");
     }, []);
 
 
     const toggleMode = () => {
         setIsDarkMode(!isDarkMode);
-        localStorage.setItem("darkMode", !isDarkMode);
+        localStorage.setItem("theme", !isDarkMode);
     };
 
     const contexobject = {
