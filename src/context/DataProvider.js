@@ -77,51 +77,66 @@ export const DataContextProvider = ({ children }) => {
 
     };
 
+    const initialLang = navigator.language;
 
-    const [lang, setLang] = useState(true);
+
+    const [lang, setLang] = useState(localStorage.getItem("lang") || initialLang);
     const [data, setData] = useState(data_tr);
-
-
     const [isDarkMode, setIsDarkMode] = useState(false);
+
+
+
+    useEffect(() => {
+        const firstLang = localStorage.getItem("lang");
+        const initial = firstLang ? firstLang : lang;
+        localStorage.setItem('lang', initial);
+
+    }, []);
+
+    const Togglelang = () => {
+
+        const currentLang = localStorage.getItem("lang")
+
+        const newLang = currentLang === "tr-TR" ? "en-EN" : "tr-TR";
+
+        localStorage.setItem("lang", newLang);
+        setLang(newLang);
+
+    };
+
+    useEffect(() => {
+
+
+        if (lang === "tr-TR") {
+            setData(data_tr);
+        }
+        else if (lang === "en-EN") {
+            setData(data_en);
+        }
+        console.log(lang);
+
+    }, [lang]);
+
+
 
     useEffect(() => {
         const savedDarkMode = localStorage.getItem("darkMode");
         setIsDarkMode(savedDarkMode === "true");
     }, []);
 
+
     const toggleMode = () => {
         setIsDarkMode(!isDarkMode);
         localStorage.setItem("darkMode", !isDarkMode);
     };
 
-
-    useEffect(() => {
-        localStorage.setItem("lang", lang);
-    }, []);
-
-
-
-    const togglelang = () => {
-        setLang(!lang);
-    };
-
-    useEffect(() => {
-        if (lang === true) {
-            setData(data_tr);
-        }
-        else if (lang === false) {
-            setData(data_en);
-        }
-        console.log("lang >", lang);
-    }, [lang]);
-
-
     const contexobject = {
         data,
         setData,
-        togglelang,
+        Togglelang,
         toggleMode,
-        isDarkMode
+        isDarkMode,
+        lang,
     }
 
 

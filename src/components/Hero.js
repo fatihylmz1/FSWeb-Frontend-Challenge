@@ -12,9 +12,10 @@ export const Hero = () => {
 
 
     const { data } = useContext(DataContext);
-    const { togglelang } = useContext(DataContext);
+    const { Togglelang } = useContext(DataContext);
     const { toggleMode } = useContext(DataContext);
     const { isDarkMode } = useContext(DataContext);
+    const { lang } = useContext(DataContext);
 
 
 
@@ -24,7 +25,7 @@ export const Hero = () => {
 
             <div className={!isDarkMode ? "header-blue" : "header-blue-dark"}>
                 <div className="lang">
-                    <p className="extra-lang"><button onClick={togglelang} className="btn-lang">Türkçe</button>'ye Geç</p>
+                    <p className="extra-lang"><button onClick={Togglelang} className="btn-lang">{lang === "tr-TR" ? "İngilizce" : "Türkçe"}</button>'ye Geç</p>
 
                     <p className="extra-toggle"><button onClick={toggleMode} className="btn-toggle" />Dark/Light</p>
                 </div>
