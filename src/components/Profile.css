@@ -26,7 +26,7 @@
 .profile-content {
     display: flex;
     flex-direction: row;
-    margin-left: 24rem;
+    margin-left: 18.5rem;
     width: 75%;
 
 }
@@ -37,7 +37,7 @@
 
 .head {
     color: #CBF281;
-    margin-left: 24rem;
+    margin-left: 18.5rem;
 }
 
 .green {
@@ -51,6 +51,7 @@
 .info-content {
     display: flex;
     flex-direction: row;
+
 }
 
 .info-content p {

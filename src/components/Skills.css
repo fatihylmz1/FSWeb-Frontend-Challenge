@@ -18,7 +18,9 @@
     text-align: center;
     width: 75%;
     flex-wrap: wrap;
-
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
 }
 
 .skills-logo {
@@ -35,6 +37,10 @@
     flex-wrap: wrap;
     text-align: center;
     width: 75%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
+
 
 }
 
@@ -91,7 +97,7 @@
         display: flex;
         flex-direction: column;
         justify-content: stretch;
-        text-align: center;
+        align-content: center;
         width: 67%;
 
     }
@@ -100,7 +106,7 @@
         display: flex;
         flex-direction: column;
         justify-content: stretch;
-        text-align: center;
+        align-content: center;
         width: 67%;
 
     }
@@ -152,14 +158,14 @@
     .header {
         color: #4832D3;
         text-align: left;
-        margin-left: 4rem;
+        margin-left: 0;
 
     }
 
     .header-dark {
         color: #CBF281;
         text-align: left;
-        margin-left: 4rem;
+        margin-left: 0;
 
     }
 
